@@ -1,7 +1,7 @@
 const products = [
-  { id: 1, name: "Cool Widget", price: 19.99, image: "https://via.placeholder.com/220x160?text=Widget" },
-  { id: 2, name: "Fancy Gadget", price: 29.99, image: "https://via.placeholder.com/220x160?text=Gadget" },
-  { id: 3, name: "Simple Tool", price: 9.99, image: "https://via.placeholder.com/220x160?text=Tool" },
+  { id: 1, name: "Cool Widget", price: 19.99, image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=220&h=160" },
+  { id: 2, name: "Fancy Gadget", price: 29.99, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fit=crop&w=220&h=160" },
+  { id: 3, name: "Simple Tool", price: 9.99, image: "https://images.unsplash.com/photo-1582845512747-e42001c356b6?fit=crop&w=220&h=160" },
 ];
 
 let cart = [];
@@ -42,7 +42,6 @@ function updateCart() {
   cartTotal.textContent = total.toFixed(2);
 }
 
-// Music Toggle
 const audio = document.getElementById("bg-music");
 const toggleButton = document.getElementById("music-toggle");
 toggleButton.addEventListener("click", () => {
