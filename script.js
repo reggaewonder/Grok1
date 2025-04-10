@@ -44,9 +44,10 @@ function updateCart() {
 
 const audio = document.getElementById("bg-music");
 const toggleButton = document.getElementById("music-toggle");
+audio.load(); // Force load to bypass mobile quirks
 toggleButton.addEventListener("click", () => {
   if (audio.paused) {
-    audio.play();
+    audio.play().catch(e => console.log("Audio play failed:", e));
     toggleButton.textContent = "Pause Music";
   } else {
     audio.pause();
@@ -54,4 +55,4 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-window.onload = displayProducts
+window.onload = displayProducts;
