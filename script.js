@@ -54,4 +54,4 @@ toggleButton.addEventListener("click", () => {
   }
 });
 
-window.onload = displayProducts;
+window.onload = displayProducts
