@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Store - Inspired by y-n10</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Futura:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <nav>
-      <h1>My Store</h1>
+      <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="Logo">
+        <h1>My Store</h1>
+      </div>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Shop</a></li>
@@ -27,6 +30,11 @@
       <div id="cart-items"></div>
       <p>Total: $<span id="cart-total">0.00</span></p>
     </section>
+    <!-- Optional Audio -->
+    <audio id="bg-music" loop>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle">Toggle Music</button>
   </main>
   <script src="script.js"></script>
 </body>
